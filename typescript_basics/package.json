@@ -1,0 +1,34 @@
+{
+  "name": "typescript_basics",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "clean": "node scripts/clean-results.js",
+    "cy:open": "cypress open",
+    "cy:run": "cypress run",
+    "cy:run:headed": "cypress run --headed --browser chrome",
+    "test:headed": "npm run clean && node scripts/run-and-report-headed.js",
+    "report": "node scripts/generate-report.js",
+    "test": "npm run clean && node scripts/run-and-report.js",
+    "test:spec": "npm run clean && node scripts/test-spec.js",
+    "test:spec:headed": "npm run clean && node scripts/run-spec-and-report-headed.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@types/sinon-chai": "^4.0.0",
+    "cypress": "^15.8.1",
+    "cypress-mochawesome-reporter": "^4.0.2",
+    "mochawesome": "^7.1.4",
+    "mochawesome-merge": "^5.1.0",
+    "mochawesome-report-generator": "^6.3.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "winston": "^3.19.0"
+  }
+}
