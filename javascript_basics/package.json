@@ -1,0 +1,29 @@
+{
+  "name": "javascript_basics",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "clean": "node scripts/clean-results.js",
+    "purge": "node scripts/purge-results.js",
+    "cy:open": "cypress open",
+    "cy:run": "cypress run",
+    "cy:run:headed": "cypress run --headed --browser chrome",
+    "report": "node scripts/generate-report.js",
+    "test": "npm run clean && node scripts/run-and-report.js",
+    "test:headed": "npm run clean && node scripts/run-and-report-headed.js",
+    "test:spec": "npm run clean && node scripts/test-spec.js",
+    "test:spec:headed": "npm run clean && node scripts/run-spec-and-report-headed.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "cypress": "^15.8.1",
+    "mochawesome": "^7.1.4",
+    "mochawesome-merge": "^5.1.0",
+    "mochawesome-report-generator": "^6.3.2",
+    "winston": "^3.19.0"
+  }
+}
